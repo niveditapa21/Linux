@@ -1,0 +1,8 @@
+|                     | `.pem`                       | `.ppk`                  |
+| ------------------- | ---------------------------- | ----------------------- |
+| Full form           | Privacy-Enhanced Mail        | PuTTY Private Key       |
+| Commonly used with  | OpenSSH                      | PuTTY                   |
+| Common on           | Linux/macOS, AWS CLI         | Windows + PuTTY         |
+| Typical SSH command | `ssh -i key.pem user@server` | PuTTY GUI               |
+| Key format          | OpenSSH-compatible           | PuTTY-specific          |
+| Conversion          | Can be converted to PPK      | Can be converted to PEM |
