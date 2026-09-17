@@ -1,0 +1,1 @@
+ssh  -i  path-where-pem-file-is located  ubuntu@public-ip-address
