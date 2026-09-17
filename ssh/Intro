@@ -1,0 +1,77 @@
+It is a protocol that lets you securely connect to and control another computer/server over a network, usually through a terminal.
+
+Your Windows PC
+      │
+      │  SSH connection
+      ▼
+Remote Linux Server
+      │
+      └── You can run commands here
+
+In SSH, **public key and private key are a pair** used to prove your identity without sending a password.
+
+### 🔑 Simple way to understand
+
+Think of a **lock and key**:
+
+* **Public key = lock** 🔒 → you can give it to others.
+* **Private key = actual secret key** 🔑 → you must keep it secret.
+
+```text
+             SSH Key Pair
+          ┌─────────────────┐
+          │                 │
+     Public Key        Private Key
+        🔓                  🔑
+     Shareable          Secret
+        │                  │
+        ▼                  ▼
+   Server stores it    You keep it
+```
+
+### Example with an AWS EC2 server
+
+When you create an EC2 instance, you might have:
+
+```text
+myserver.pem
+```
+
+The `.pem` contains your **private key**.
+
+The corresponding **public key** is installed on the EC2 server.
+
+When you run:
+
+```powershell
+ssh -i myserver.pem ubuntu@13.234.56.78
+```
+
+SSH essentially proves:
+
+> "I possess the private key that matches the public key stored on this server."
+
+The server verifies the match and allows you to log in.
+
+### What can you share?
+
+| Key             | Share?  | Where?                   |
+| --------------- | ------- | ------------------------ |
+| **Public key**  | ✅ Yes   | Server, GitHub, services |
+| **Private key** | ❌ Never | Keep on your computer    |
+
+For example, a public key may look like:
+
+```text
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQ...
+```
+
+A private key is much more sensitive and should **never** be pasted into GitHub, email, chats, or shared with anyone.
+
+### 🧠 Remember this for DevOps interviews
+
+**Public key → can be shared and is placed on the server.**
+
+**Private key → secret and stays with the user/client.**
+
+
