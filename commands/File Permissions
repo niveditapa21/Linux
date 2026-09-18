@@ -1,0 +1,9 @@
+chmod permissions file: Change the permissions of a file or directory.
+
+chmod +x file: Add executable permission to a file.
+
+chmod -w file: Remove write permission from a file.
+
+chown user:group file: Change the owner and group of a file or directory.
+
+chgrp group file: Change the group of a file or directory.
