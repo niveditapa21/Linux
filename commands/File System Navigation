@@ -1,0 +1,25 @@
+pwd: Print the current working directory.
+
+ls: List files and directories in the current directory.
+
+ls -l: Display detailed information about files and directories.
+
+ls -a: Include hidden files and directories in the list.
+
+cd directory: Change the current directory to the specified directory.
+
+cd ..: Go up one level in the directory hierarchy.
+
+cd ~: Go to the home directory.
+
+mkdir directory: Create a new directory with the specified name.
+
+rm file: Remove a file.
+
+rm -r directory: Remove a directory and its contents recursively.
+
+cp source destination: Copy a file or directory.
+
+cp -r source destination: Copy a directory and its contents recursively.
+
+mv source destination: Move or rename a file or directory.
