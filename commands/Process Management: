@@ -1,0 +1,13 @@
+ps: Display information about active processes.
+
+ps -ef: Display detailed information about all processes.
+
+kill process_id: Terminate a process with the specified process ID.
+
+killall process_name: Terminate all processes with the specified name.
+
+top: Display real-time information about system processes.
+
+bg: Put a process in the background.
+
+fg: Bring a background process to the foreground.
