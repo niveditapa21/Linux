@@ -1,0 +1,15 @@
+uname: Print system information.
+
+uname -a: Print detailed system information.
+
+whoami: Display the current user.
+
+df: Show disk space usage.
+
+free: Display memory usage.
+
+uptime: Show system uptime.
+
+ifconfig: Display network interface information.
+
+ping host: Send ICMP echo requests to a host for network connectivity testing.
