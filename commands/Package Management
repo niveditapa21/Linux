@@ -1,0 +1,9 @@
+apt-get install package: Install a package using the Advanced Package Tool (APT) package manager.
+
+apt-get update: Update the local package index to retrieve the latest package information.
+
+apt-get upgrade: Upgrade all installed packages to their latest versions.
+
+apt-get remove package: Uninstall a package.
+
+apt-cache search keyword: Search for packages based on a keyword.
