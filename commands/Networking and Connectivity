@@ -1,0 +1,9 @@
+ifconfig: Configure and display network interface information.
+
+ping host: Send ICMP echo requests to a host for network connectivity testing.
+
+netstat: Display network connection information, routing tables, and interface statistics.
+
+ssh user@host: Connect to a remote host using SSH.
+
+nc host port: Open a TCP or UDP connection to a remote host on a specified port.
