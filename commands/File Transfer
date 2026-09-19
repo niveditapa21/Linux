@@ -1,0 +1,5 @@
+scp source destination: Securely copy files between local and remote hosts using the SSH protocol.
+
+rsync source destination: Synchronize files and directories between local and remote hosts efficiently.
+
+sftp user@host: Start an interactive secure file transfer session with a remote host.
