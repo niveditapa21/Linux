@@ -1,0 +1,7 @@
+ssh user@host: Connect to a remote host using SSH.
+
+scp source destination: Securely copy files between local and remote hosts.
+
+wget url: Download a file from a specified URL.
+
+curl url: Transfer data to or from a server using various protocols.
