@@ -1,0 +1,9 @@
+nano file: Open a file for editing with the Nano editor.
+
+vi file: Open a file for editing with the Vi editor.
+
+grep pattern file: Search for a pattern in a file.
+
+grep -r pattern directory: Recursively search for a pattern in files within a directory.
+
+sed 's/old/new/g' file: Replace occurrences of a pattern with a new value in a file

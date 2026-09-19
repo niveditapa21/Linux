@@ -1,0 +1,11 @@
+top: Monitor system processes and resource usage in real-time.
+
+htop: Interactive process viewer and system monitor.
+
+du -sh directory: Display the total size of a directory.
+
+df -h: Show disk space usage of mounted file systems.
+
+reboot: Reboot the system.
+
+shutdown: Shutdown the system

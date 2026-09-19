@@ -1,0 +1,7 @@
+tar cf archive.tar files: Create a tar archive of specified files.
+
+tar xf archive.tar: Extract files from a tar archive.
+
+gzip file: Compress a file using gzip compression.
+
+gzip -d file.gz: Decompress a file compressed with gzip.
