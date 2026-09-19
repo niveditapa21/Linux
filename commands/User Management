@@ -1,0 +1,9 @@
+useradd username: Create a new user account.
+
+userdel username: Delete a user account.
+
+passwd username: Set or change the password for a user account.
+
+su username: Switch to another user account.
+
+sudo command: Execute a command with superuser (root) privileges.
