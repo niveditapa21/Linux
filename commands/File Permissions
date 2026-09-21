@@ -19,9 +19,12 @@ a) user(owner)--> person who created the file
 b) group--> user belonging to a shared group
 c) others--> everyone else on the system
 
+The command you use to change the security permissions on files is called "chmod", which stands for "change mode" because,
+the nine security characters are collectively called the security "mode" of the file. 
+
 Permission Groups in Linux:
 ---     ---     ---
-rwx     rwx     rwx
+rwx     rwx     rwx   -------> 9 security characters
 user    group   other 
 
 Reference 	Class   	Description
