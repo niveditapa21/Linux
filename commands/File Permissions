@@ -7,3 +7,31 @@ chmod -w file: Remove write permission from a file.
 chown user:group file: Change the owner and group of a file or directory.
 
 chgrp group file: Change the group of a file or directory.
+
+
+Linux has 3 basic permission:
+a) read(r)--> view the file content or list the directory files
+b) write(w)--> modify file
+c) execute(x)---> run a file as program or enter a directory
+
+Linux ownership and permission:
+a) user(owner)--> person who created the file
+b) group--> user belonging to a shared group
+c) others--> everyone else on the system
+
+Permission Groups in Linux:
+---     ---     ---
+rwx     rwx     rwx
+user    group   other 
+
+Reference 	Class   	Description
+`u`	user	The user permissions apply only to the owner of the file or directory, they will not impact the actions of other users. 
+`g`	group	The group permissions apply only to the group that has been assigned to the file or directory, they will not affect the actions of other users. 
+`o`	others	The other permissions apply to all other users on the system, this is the permission group that you want to watch the most. 
+`a`	All three	All three (owner, groups, others)
+
+permissions are mapped:
+Read (r) = 4
+Write (w) = 2
+Execute (x) = 1
+
