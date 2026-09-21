@@ -14,8 +14,6 @@ ifconfig: Display network interface information.
 
 ping host: Send ICMP echo requests to a host for network connectivity testing.
 
-uname -a: Display detailed system information including the kernel version.
-
 lsb_release -a: Show distribution-specific information about the Linux distribution.
 
 hostname: Print or set the system's hostname.
