@@ -8,6 +8,11 @@ chown user:group file: Change the owner and group of a file or directory.
 
 chgrp group file: Change the group of a file or directory.
 
+File Permission: Operation Chart:-->
+Operators	Definition
+`+`	Add permissions
+`-`	Remove permissions
+`=`	Set the permissions to the specified values
 
 Linux has 3 basic permission:
 a) read(r)--> view the file content or list the directory files
