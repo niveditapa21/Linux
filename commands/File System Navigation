@@ -21,5 +21,7 @@ rm -r directory: Remove a directory and its contents recursively.
 cp source destination: Copy a file or directory.
 
 cp -r source destination: Copy a directory and its contents recursively.
+                          Recursively means “including everything inside, and everything inside those things, and so on.”
+                          For cp -r, it means copying a directory along with all its files and subdirectories, including the contents of those subdirectories.
 
 mv source destination: Move or rename a file or directory.
