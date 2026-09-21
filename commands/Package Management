@@ -7,3 +7,4 @@ apt-get upgrade: Upgrade all installed packages to their latest versions.
 apt-get remove package: Uninstall a package.
 
 apt-cache search keyword: Search for packages based on a keyword.
+                          ex--->  apt-cache search python
