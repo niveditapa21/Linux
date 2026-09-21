@@ -96,17 +96,6 @@ test.py      ├──> files.tar ──gzip──> files.tar.gz
 config.txt   ┘
 ```
 
-### Important commands
-
-| Command                       | Meaning             |
-| ----------------------------- | ------------------- |
-| `tar -cf files.tar files`     | Create tar archive  |
-| `tar -xf files.tar`           | Extract tar archive |
-| `tar -czf files.tar.gz files` | Create tar + gzip   |
-| `tar -xzf files.tar.gz`       | Extract tar.gz      |
-| `gzip file`                   | Compress a file     |
-| `gunzip file.gz`              | Decompress gzip     |
-
 ### What do `c`, `x`, `f`, `z` mean?
 
 For example:
@@ -142,4 +131,3 @@ When you see:
 .tar.gz
 ```
 
-think **archive + compression**.
