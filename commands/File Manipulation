@@ -3,11 +3,17 @@ cat file: Display the contents of a file.
 less file: View the contents of a file with pagination.
 
 head file: Display the first few lines of a file.
+           By default it will show first 10 lines.
+           syntax to see specific number of lines-->  head -n number-of-line file-name--->  head -n 3 file.txt
 
 tail file: Display the last few lines of a file.
+            By default it will show last 10 lines
+            syntax to see specific number of lines-->  head -n number-of-line file-name--->  tail -n 3 file.txt
 
-grep pattern file: Search for a pattern in a file.
+grep what-to-search-in-file   file-name: Search for a pattern in a file.
+                                        ex: grep if if.py
+                    
 
-grep -r pattern directory: Recursively search for a pattern in files within a directory.
+grep -r what-to-search-in-file   directory-name: Recursively search for a pattern in files within a directory.
 
 
