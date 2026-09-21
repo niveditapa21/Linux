@@ -5,3 +5,7 @@ tar xf archive.tar: Extract files from a tar archive.
 gzip file: Compress a file using gzip compression.
 
 gzip -d file.gz: Decompress a file compressed with gzip.
+
+tar -czf files.tar.gz files	Create tar + gzip
+
+tar -xzf files.tar.gz	Extract tar.gz
