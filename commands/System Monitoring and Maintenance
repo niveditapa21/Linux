@@ -9,3 +9,5 @@ df -h: Show disk space usage of mounted file systems.
 reboot: Reboot the system.
 
 shutdown: Shutdown the system
+
+man: Display the manual page for the specified command.
