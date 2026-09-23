@@ -43,3 +43,10 @@ Read (r) = 4
 Write (w) = 2
 Execute (x) = 1
 
+Most Important chmod Numbers:-->
+
+755: Owner gets full access; group and others get read and execute.
+644: Owner gets read and write; group and others get read-only.
+700: Owner gets full access; group and others get zero permissions.
+600: Owner gets read and write; group and others get zero access.
+777: Everyone gets full read, write, and execute access.
