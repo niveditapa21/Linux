@@ -4,4 +4,4 @@ chown user:group file: Change the owner and group of a file or directory.
 
 chgrp group file: Change the group of a file or directory.
 
-ls -l: List files and directories with detailed permission and ownership information.
+ls -l: List files and directories with detailed permission and ownership information,with time stamp
