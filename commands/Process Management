@@ -11,3 +11,5 @@ top: Display real-time information about system processes.
 bg: Put a process in the background.
 
 fg: Bring a background process to the foreground.
+
+nproc: prints the number of processing units (CPU cores) available to the current process.
