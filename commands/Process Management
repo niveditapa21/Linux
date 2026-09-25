@@ -20,3 +20,19 @@ bg: Put a process in the background.
 fg: Bring a background process to the foreground.
 
 nproc: prints the number of processing units (CPU cores) available to the current process.
+
+awk: used to search, filter, extract, and process text/data, especially when the data is arranged in columns.
+     syntax ---> awk 'pattern { action }' filename
+     -F  → specify separator
+
+     Print a particular column
+     $1 = first column
+     $2 = second column
+     $3 = third column
+      ex--> awk '{print $1}' file.txt
+
+     Print the entire file
+     ex--->  awk '{print}' file.txt
+
+     with grep-->
+     ex:  ps -ef | grep "docker" | awk -F" " '{print $2}'
