@@ -36,3 +36,24 @@ awk: used to search, filter, extract, and process text/data, especially when the
 
      with grep-->
      ex:  ps -ef | grep "docker" | awk -F" " '{print $2}'
+
+
+                                               Difference of grep & awk:--->
+grep is mainly used to SEARCH for matching text, while awk is used to SEARCH + FILTER + EXTRACT + PROCESS data, especially columns.
+
+Example
+Nivedita DevOps 1
+Rahul AWS 2
+Amit Linux 3
+
+          Using grep:
+
+grep "DevOps" file.txt
+
+Output:---->  Nivedita DevOps 1
+
+           Using awk:
+
+awk '/DevOps/ {print $1}' file.txt
+
+Output:----->  Nivedita
