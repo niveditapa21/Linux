@@ -4,6 +4,11 @@ ps -ef: Display detailed information about all processes.
         -e → show every process on the system (not just yours)
         -f → full format (more columns/detail — like PPID, start time)
 
+ps -ef | grep "things to be searched"  --> 
+                                          ps -ef    -----> Displays information about all running processes.
+                                          | (pipe)  ---->  The pipe sends the output of ps -ef to the next command.
+                                          grep "things to be searched"   ----> grep searches the incoming text for the specified word/pattern.
+
 kill process_id: Terminate a process with the specified process ID.
 
 killall process_name: Terminate all processes with the specified name.
