@@ -1,0 +1,6 @@
+| `wget`                            | `curl`                                                       |
+| --------------------------------- | ------------------------------------------------------------ |
+| Mainly used to **download files** | Mainly used to **transfer data / communicate with servers**  |
+| Very convenient for downloading   | More flexible for APIs, HTTP requests, etc.                  |
+| Can recursively download websites | Doesn't focus on recursive downloading                       |
+| Simple download syntax            | More options for HTTP methods, headers, authentication, etc. |
