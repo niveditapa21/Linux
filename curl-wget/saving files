@@ -2,13 +2,7 @@ It means **where the downloaded/received data goes by default**.
 
 ### `wget` → saves to a file
 
-Suppose you run:
-
-```bash
-wget https://example.com/file.txt
-```
-
-`wget` downloads the content and **saves it as a file** in your current directory.
+Suppose you run:  ---->wget https://example.com/file.txt  ---> `wget` downloads the content and **saves it as a file** in your current directory.
 
 For example:
 
@@ -25,13 +19,7 @@ So:
 
 ### `curl` → displays on the terminal
 
-Suppose you run:
-
-```bash
-curl https://example.com/file.txt
-```
-
-By default, `curl` takes the response from the server and **prints it directly on your terminal**.
+Suppose you run--->     curl https://example.com/file.txt---> By default, `curl` takes the response from the server and **prints it directly on your terminal**.
 
 You might see:
 
@@ -41,9 +29,7 @@ Hello, this is my file.
 
 This output is called **stdout (standard output)**.
 
-So:
-
-**curl → URL → terminal (stdout)**
+So:----> **curl → URL → terminal (stdout)**
 
 ---
 
