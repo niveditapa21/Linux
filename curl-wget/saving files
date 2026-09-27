@@ -1,0 +1,85 @@
+It means **where the downloaded/received data goes by default**.
+
+### `wget` → saves to a file
+
+Suppose you run:
+
+```bash
+wget https://example.com/file.txt
+```
+
+`wget` downloads the content and **saves it as a file** in your current directory.
+
+For example:
+
+```text
+/home/ubuntu/
+    file.txt    ← downloaded file
+```
+
+So:
+
+**wget → URL → file on disk**
+
+---
+
+### `curl` → displays on the terminal
+
+Suppose you run:
+
+```bash
+curl https://example.com/file.txt
+```
+
+By default, `curl` takes the response from the server and **prints it directly on your terminal**.
+
+You might see:
+
+```text
+Hello, this is my file.
+```
+
+This output is called **stdout (standard output)**.
+
+So:
+
+**curl → URL → terminal (stdout)**
+
+---
+
+### But `curl` can also save to a file
+
+Use `-O`:
+
+```bash
+curl -O https://example.com/file.txt
+```
+
+Now:
+
+```text
+curl → URL → file.txt
+```
+
+Or use `-o` to choose the filename:
+
+```bash
+curl -o myfile.txt https://example.com/file.txt
+```
+
+### Easy way to remember
+
+```text
+wget URL
+   ↓
+saves to file by default
+
+
+curl URL
+   ↓
+prints to terminal by default
+```
+
+**stdout = Standard Output = normally your terminal/screen.**
+
+This distinction is particularly useful in DevOps because `curl` is often used to **see API responses or check whether a service is working**, rather than necessarily saving the response as a file.
