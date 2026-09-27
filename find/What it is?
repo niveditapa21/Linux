@@ -1,0 +1,83 @@
+ `find / -name filename` is a Linux command used to **search for a file or directory starting from the root (`/`)**.
+
+### Break it down
+
+```bash
+find / -name filename
+```
+
+* `find` → command used to search
+* `/` → start searching from the **root directory**
+* `-name` → search based on the name
+* `filename` → the file/directory name you're looking for
+
+### Example
+
+Suppose you want to find `test.sh`:
+
+```bash
+find / -name test.sh
+```
+
+It may return:
+
+```text
+/home/ubuntu/test.sh
+/tmp/test.sh
+```
+
+This means `test.sh` exists at those locations.
+
+### Why `/`?
+
+Linux has a directory structure like:
+
+```text
+/
+├── home
+├── etc
+├── var
+├── tmp
+├── usr
+└── ...
+```
+
+Starting with `/` means **search the entire filesystem** (subject to permissions and mounted filesystems).
+
+### Search only your current directory
+
+```bash
+find . -name test.sh
+```
+
+Here `.` means **current directory**.
+
+### Case-insensitive search
+
+```bash
+find / -iname test.sh
+```
+
+`-iname` ignores uppercase/lowercase differences.
+
+For example, it can find:
+
+```text
+test.sh
+Test.sh
+TEST.SH
+```
+
+### One important point
+
+`find / -name test.sh` can produce many **"Permission denied"** messages because a normal user may not be allowed to access some directories.
+
+As `root`, you generally have access to much more of the filesystem.
+
+A very useful DevOps command to remember is:
+
+```bash
+find / -name "filename" 2>/dev/null
+```
+
+Here `2>/dev/null` hides the permission-error messages so you see mainly the search results.
